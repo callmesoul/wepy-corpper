@@ -1,6 +1,6 @@
 {
   "name": "wepy-calendar",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "wepy 日历组件",
   "main": "calendar.wpy",
   "scripts": {
