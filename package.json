@@ -1,14 +1,14 @@
 {
-  "name": "wepy-com-toast",
-  "version": "1.0.3",
-  "description": "",
-  "main": "toast.wpy",
+  "name": "wepy-calendar",
+  "version": "0.0.1",
+  "description": "wepy 日历组件",
+  "main": "calendar.wpy",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:wepyjs/wepy-com-toast.git"
+    "url": "git@github.com:callmesoul/wepy-calendar"
   },
   "author": "Gcaufy",
   "license": "MIT",
