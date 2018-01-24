@@ -4,7 +4,7 @@
       <view class="wepy-calendar-prev" catchtap="handleCalendar('prev')" >
         <image src="data:image/png;base64,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"></image>
       </view>
-      <picker class="wepy-calendar-date" fields="month"  mode="date" value="{{currentDate}}" start="{{startDate}}" end="{{endDate}}" bindchange="bindDateChange">
+      <picker class="wepy-calendar-date" fields="month"  mode="date" value="{{pickerValue}}" start="{{startDate}}" end="{{endDate}}" bindchange="bindDateChange">
         <view class="picker">
           {{current.year || "--"}} 年 {{current.month || "--"}} 月
         </view>
@@ -29,208 +29,232 @@
   </view>
 </template>
 <script>
-  import wepy from 'wepy'
-  let choose_year = null,
-    choose_month = null;
+    import wepy from 'wepy'
+    let choose_year = null,
+        choose_month = null;
 
-   export default class WepyCalendar extends wepy.component {
-    props = {
-      currentDate: {
-        type:String,
-        defult:new Date(),
-        twoWay: true
-      },
-      startDate: {
-        type:String,
-        defult:new Date(),
-        twoWay: true
-      },
-      endDate: {
-        type:String,
-        defult:new Date(),
-        twoWay: true
-      },
-      hasIconList:{
-        type:Array,
-        defult:[],
-        twoWay: true
-      }
-    };
-    onLoad () {
-      if(!this.currentDate){
-        this.currentDate=new Date();
-      }
-      this.current.year=new Date(this.currentDate).getFullYear();
-      this.current.month=new Date(this.currentDate).getMonth() + 1;
-      const date = new Date();
-      this.now.year=date.getFullYear();
-      this.now.month= date.getMonth() + 1;
-      this.now.day= date.getDate();
-      this.calculateEmptyGrids(this.current.year, this.current.month);
-      this.calculateDays(this.current.year, this.current.month);
+    export default class WepyCalendar extends wepy.component {
+        props = {
+            currentDate: {
+                type:String,
+                defult:new Date(),
+                twoWay: true
+            },
+            startDate: {
+                type:String,
+                defult:'',
+                twoWay: true
+            },
+            endDate: {
+                type:String,
+                defult:'',
+                twoWay: true
+            },
+            hasIconList:{
+                type:Array,
+                defult:[],
+                twoWay: true
+            }
+        };
+        onLoad () {
+            if(!this.currentDate){
+                this.currentDate=new Date();
+            }
 
-      let getDayWidth=new Promise((resolve,reject)=>{
-        wx.createSelectorQuery().select('.wepy-calendar-weeks').boundingClientRect(function(rect){
-          resolve(parseInt(rect.width/7));
-        }).exec()
-      })
-      getDayWidth.then((width)=>{
-        this.dayWidth=width;
-        this.$apply();
-      })
+            this.setCurrentData();
 
-    }  // 在Page和Component共用的生命周期函数
+            const date = new Date();
+            this.now.year=date.getFullYear();
+            this.now.month= date.getMonth() + 1;
+            this.now.day= date.getDate();
 
-    onShow () {
 
-    }  // 只在Page中存在的页面生命周期函数
+        }  // 在Page和Component共用的生命周期函数
 
-    config = {};  // 只在Page实例中存在的配置数据，对应于原生的page.json文件
+        onShow () {
 
-    data = {
-      days:[],
-      current:{},
-      hasEmptyGrid: false,
-      empytGrids:[],
-      showPicker: false,
-      weeks_ch:[ '日', '一', '二', '三', '四', '五', '六' ],
-      dayWidth:0,
-      now:{
-        year:0,
-        month:0,
-        day:0
-      }
-    };  // 页面所需数据均需在这里声明，可用于模板数据绑定
+        }  // 只在Page中存在的页面生命周期函数
 
-    components = {};  // 声明页面中所引用的组件，或声明组件中所引用的子组件
+        config = {};  // 只在Page实例中存在的配置数据，对应于原生的page.json文件
 
-    mixins = [];  // 声明页面所引用的Mixin实例
+        data = {
+            days:[],
+            current:{},
+            hasEmptyGrid: false,
+            empytGrids:[],
+            showPicker: false,
+            weeks_ch:[ '日', '一', '二', '三', '四', '五', '六' ],
+            dayWidth:0,
+            now:{
+                year:0,
+                month:0,
+                day:0
+            }
+        };  // 页面所需数据均需在这里声明，可用于模板数据绑定
 
-    computed = {};  // 声明计算属性（详见后文介绍）
+        components = {
 
-    watch = {
-      currentDate(newVal) {
-      }
-    };  // 声明数据watcher（详见后文介绍）
+        };  // 声明页面中所引用的组件，或声明组件中所引用的子组件
 
-    methods = {
-      // 点击日历上某一天
-      tapDayItem(index,e) {
-        if(this.days[index].choosed){
-          this.days[index].choosed=false;
-        }else{
-          this.setAllNotSelected().then(()=>{
-            this.days[index].choosed=true;
+        mixins = [];  // 声明页面所引用的Mixin实例
+
+        computed = {
+            pickerValue(){
+                let value=this.current.year+"-"+this.setMonthDouble(this.current.month);
+                return value;
+            }
+        };  // 声明计算属性（详见后文介绍）
+
+        watch = {
+            currentDate(){
+                this.setCurrentData();
+            }
+        };  // 声明数据watcher（详见后文介绍）
+
+        methods = {
+            // 点击日历上某一天
+            tapDayItem(index,e) {
+                if(this.days[index].choosed){
+                    this.days[index].choosed=false;
+                }else{
+                    this.setAllNotSelected().then(()=>{
+                        this.days[index].choosed=true;
+                        this.$apply();
+                    })
+                }
+                this.$emit('calChangeSelectedDay',this.current.year+"-"+this.setMonthDouble(this.current.month)+"-"+(index+1),e);
+            },
+            // 递增、递减切换月份
+            handleCalendar(type,e) {
+                const cur_year = this.current.year;
+                const cur_month = this.current.month
+                let newMonth;
+                let newYear;
+                if (type === 'prev') {
+                    newMonth = cur_month - 1;
+                    newYear = cur_year;
+                    if (newMonth < 1) {
+                        newYear = cur_year - 1;
+                        newMonth = 12;
+                    }
+                } else {
+                    newMonth = cur_month + 1;
+                    newYear = cur_year;
+                    if (newMonth > 12) {
+                        newYear = cur_year + 1;
+                        newMonth = 1;
+                    }
+                }
+                this.current.year=newYear;
+                this.current.month=newMonth;
+                this.$emit('calChangeCurrentDate',this.current.year+"-"+this.setMonthDouble(this.current.month),e);
+            },
+            // 点击年月调用picker选择器
+            bindDateChange(e) {
+                let value=e.detail.value.split("-");
+                let year=parseInt(value[0]);
+                let month=parseInt(value[1]);
+                if(year==this.current.year && month==this.current.month){
+                    return false;
+                }else{
+                    this.current.year=year;
+                    this.current.month=month;
+                    this.$emit('calChangeCurrentDate',this.current.year+"-"+this.setMonthDouble(this.current.month),e);
+                }
+            }
+        };  // 声明页面wxml中标签的事件处理函数。注意，此处只用于声明页面wxml中标签的bind、catch事件，自定义方法需以自定义方法的方式声明
+
+        events = {
+            startRenderCalendar(){
+                this.drawCalendar();
+            }
+        };  // 声明组件之间的事件处理函数
+
+        getThisMonthDays(year, month) {
+            return new Date(year, month, 0).getDate();
+        }
+        // 计算每月第一天是星期几
+        getFirstDayOfWeek(year, month) {
+            return new Date(Date.UTC(year, month - 1, 1)).getDay();
+        }
+        // 计算在每月第一天在当月第一周之前的空余的天数
+        calculateEmptyGrids(year, month) {
+            const firstDayOfWeek = this.getFirstDayOfWeek(year, month);
+            let empytGrids = [];
+            if (firstDayOfWeek > 0) {
+                for (let i = 0; i < firstDayOfWeek; i++) {
+                    empytGrids.push(i);
+                }
+                this.hasEmptyGrid=true;
+            }
+            this.empytGrids=empytGrids;
+        }
+        // 渲染日历格子
+        calculateDays(year, month) {
+            let days = [];
+            const thisMonthDays = this.getThisMonthDays(year, month);
+            for (let i = 1; i <= thisMonthDays; i++) {
+                let  day={
+                    day: i,
+                    choosed: false
+                }
+                if(this.hasIconList && this.hasIconList.length>0){
+                    this.hasIconList.map((item)=>{
+                        if(i==item){
+                            day.hasIcon=true;
+                        }
+                    })
+                }
+                if(this.current.year==this.now.year && this.current.month==this.now.month && i==this.now.day){
+                    day.today=true;
+                }
+                days.push(day);
+            }
+            this.days=days;
             this.$apply();
-          })
         }
-        this.$emit('calChangeSelectedDay',this.current.year+"-"+this.current.month+"-"+index+1,e);
 
-
-      },
-      // 递增、递减切换月份
-      handleCalendar(type,e) {
-        const cur_year = this.current.year;
-        const cur_month = this.current.month;
-        let newMonth;
-        let newYear;
-        if (type === 'prev') {
-          newMonth = cur_month - 1;
-          newYear = cur_year;
-          if (newMonth < 1) {
-            newYear = cur_year - 1;
-            newMonth = 12;
-          }
-        } else {
-          newMonth = cur_month + 1;
-          newYear = cur_year;
-          if (newMonth > 12) {
-            newYear = cur_year + 1;
-            newMonth = 1;
-          }
+        setAllNotSelected(){
+            return new Promise((resolve,reject)=>{
+                this.days.map((item)=>{
+                    item.choosed=false;
+                })
+                resolve();
+            })
         }
-        this.current.year=newYear;
-        this.current.month=newMonth;
-        this.calculateDays(newYear, newMonth);
-        this.calculateEmptyGrids(newYear, newMonth);
-        this.$emit('calChangeCurrentDate',this.current.year+"-"+this.current.month,e);
-      },
-      // 点击年月调用picker选择器
-      bindDateChange(e) {
-        let value=e.detail.value.split("-");
-        let year=parseInt(value[0]);
-        let month=parseInt(value[1]);
-        if(year==this.current.year && month==this.current.month){
-          return false;
-        }else{
-          this.currentDate=year+'-'+month;
-          this.current.year=year;
-          this.current.month=month;
-          this.calculateDays(year, month);
-          this.calculateEmptyGrids(year, month);
-          this.$emit('calChangeCurrentDate',this.current.year+"-"+this.current.month,e);
+
+        drawCalendar(){
+            this.calculateEmptyGrids(this.current.year, this.current.month);
+            this.calculateDays(this.current.year, this.current.month);
+
+            let getDayWidth=new Promise((resolve,reject)=>{
+                wx.createSelectorQuery().select('.wepy-calendar-weeks').boundingClientRect(function(rect){
+                    resolve(parseInt(rect.width/7));
+                }).exec()
+            })
+            getDayWidth.then((width)=>{
+                this.dayWidth=width;
+                this.$apply();
+            })
         }
-      }
-    };  // 声明页面wxml中标签的事件处理函数。注意，此处只用于声明页面wxml中标签的bind、catch事件，自定义方法需以自定义方法的方式声明
 
-    events = {
+        setMonthDouble(value){//设置月份两位数格式
+            if(value){
+                value=value.toString();
+                if(value.length==2){
+                    return value;
+                }else{
+                    return "0"+value;
+                }
+            }
+        }
 
-    };  // 声明组件之间的事件处理函数
+        setCurrentData(){//设置当前年月
+            this.current.year=new Date(this.currentDate).getFullYear();
+            this.current.month=new Date(this.currentDate).getMonth() + 1;
+        }
 
-    getThisMonthDays(year, month) {
-      return new Date(year, month, 0).getDate();
     }
-    // 计算每月第一天是星期几
-    getFirstDayOfWeek(year, month) {
-      return new Date(Date.UTC(year, month - 1, 1)).getDay();
-    }
-    // 计算在每月第一天在当月第一周之前的空余的天数
-    calculateEmptyGrids(year, month) {
-      const firstDayOfWeek = this.getFirstDayOfWeek(year, month);
-      let empytGrids = [];
-      if (firstDayOfWeek > 0) {
-        for (let i = 0; i < firstDayOfWeek; i++) {
-          empytGrids.push(i);
-        }
-        this.hasEmptyGrid=true;
-      }
-      this.empytGrids=empytGrids;
-    }
-    // 渲染日历格子
-    calculateDays(year, month) {
-      let days = [];
-      const thisMonthDays = this.getThisMonthDays(year, month);
-      for (let i = 1; i <= thisMonthDays; i++) {
-        let  day={
-          day: i,
-          choosed: false
-        }
-        this.hasIconList.map((item)=>{
-          if(i==item){
-            day.hasIcon=true;
-          }
-        })
-        if(this.current.year==this.now.year && this.current.month==this.now.month && i==this.now.day){
-          day.today=true;
-        }
-        days.push(day);
-      }
-      this.days=days;
-      this.$apply();
-    }
-
-    setAllNotSelected(){
-      return new Promise((resolve,reject)=>{
-        this.days.map((item)=>{
-          item.choosed=false;
-        })
-        resolve();
-      })
-    }
-
-
-
-  }
 </script>
 <style lang="css" >
   .wepy-calendar-top{

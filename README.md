@@ -57,6 +57,10 @@ npm install wepy-calendar --save
             wepyCanlendar
         };
         
+        onLoad(){
+            this.$broadcast("startRenderCalendar");//通知日历组件可以开始渲染
+        }
+        
         data = {
               currentDate:"2017-08-09",
               startDate:'2017-01-01',
@@ -79,6 +83,7 @@ npm install wepy-calendar --save
 
 
 
+
 | 属性/方法   | 必填    |  默认值  |备注|
 | --------   | -----   | ---- |---- |
 | currentDate | 否      |   new Date() |日历当前时间|
@@ -87,6 +92,7 @@ npm install wepy-calendar --save
 | hasIconList  | 否      |   []    |日历打入天数组|
 | calChangeCurrentDate  | 否      |   (date,e)    |日历当前时间改变回调
 | calChangeSelectedDay  | 否      |   (date,e)    |声明组件之间的事件处理函数
+| this.$broadcast("startRenderCalendar");  | 是      |   ‘’    |通知组件可以开始渲染
 
 ![toast](http://nowechat.oss-cn-shenzhen.aliyuncs.com/qrcode_for_gh_b4c00b84720c_258.jpg)
 
