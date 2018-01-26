@@ -49,6 +49,13 @@ npm install wepy-cropper --save
                         }
                     })
         }
+        
+        events = {
+              //裁剪完的图片
+              wepyCropperFinsh(path){
+                
+              }
+            };  // 声明组件之间的事件处理函数
     }
     
 </script>
