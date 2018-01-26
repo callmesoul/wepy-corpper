@@ -1,16 +1,16 @@
 {
   "name": "wepy-calendar",
   "version": "0.0.8",
-  "description": "wepy 日历组件",
-  "main": "calendar.wpy",
+  "description": "wepy 小程序图片裁剪",
+  "main": "wepy-cropper.wpy",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:callmesoul/wepy-calendar"
+    "url": "git@github.com:callmesoul/wepy-cropper"
   },
-  "author": "Gcaufy",
+  "author": "callmesoul",
   "license": "MIT",
   "devDependencies": {
     "babel": "^6.5.2",
