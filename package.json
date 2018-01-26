@@ -1,6 +1,6 @@
 {
-  "name": "wepy-calendar",
-  "version": "0.0.8",
+  "name": "wepy-cropper",
+  "version": "0.0.1",
   "description": "wepy 小程序图片裁剪",
   "main": "wepy-cropper.wpy",
   "scripts": {
