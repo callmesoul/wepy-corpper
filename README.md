@@ -1,4 +1,4 @@
-# 微信小程序 wepyjs 第三方 日历组件
+# 微信小程序 wepyjs 第三方 图片裁剪组件
 
 ![toast](https://raw.githubusercontent.com/tomfriwel/welCropper/master/documents/result.gif)
 
