@@ -19,7 +19,7 @@ npm install wepy-cropper --save
 ```javascript
 // index.wpy
 <template>
-    <wepyCropper :params.sync="params"></wepyCropper>
+    <wepyCropper :params.sync="clipParams"></wepyCropper>
 </template>
 <script>
     import wepy from 'wepy';
@@ -27,7 +27,7 @@ npm install wepy-cropper --save
 
     export default class Index extends wepy.page {
         data={
-            params:{
+            clipParams:{
                     src:'', //字符串, 图片path 必填
                     mode:"rectangle", //选填,默认rectangle
                     /* 两种模式
