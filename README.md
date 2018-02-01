@@ -23,14 +23,19 @@ npm install wepy-cropper --save
 </template>
 <script>
     import wepy from 'wepy';
-    import wepyCanlendar from 'wepy-cropper';
+    import wepyCropper from 'wepy-cropper';
 
     export default class Index extends wepy.page {
         data={
             params:{
-                    src:'',
-                    mode:"rectangle",
-                    sizeType:"compressed",
+                    src:'', //字符串, 图片path 必填
+                    mode:"rectangle", //选填,默认rectangle
+                    /* 两种模式
+                    通过的mode设定
+                    mode:'rectangle' 返回图片
+                    mode:'quadrangle' 并不返回图片，只返回在图片中的四个点，用于perspective correction（可以查找OpenCV相关资料）
+                    */
+                    sizeType:["compressed"],//数组,选填 ['original', 'compressed'], 默认original
             },
         }
         components = {
@@ -38,16 +43,20 @@ npm install wepy-cropper --save
         };
         
         onLoad(){
-            wx.chooseImage({
-                        count: 1, // 默认9
-                        sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
-                        sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
-                        success(res) {
-                            const tempFilePath = res.tempFilePaths[0]
-                            this.clipParams.src=tempFilePath;
-                            this.$apply();
-                        }
-                    })
+            let chooseImage=new Promise((resolve,reject)=>{
+                wx.chooseImage({
+                    count: 1, // 默认9
+                    sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
+                    sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
+                    success(res) {
+                        resolve(res.tempFilePaths[0]);
+                    }
+                })
+            })
+            chooseImage.then((path)=>{
+                this.clipParams.src=tempFilePath;
+                this.$apply();
+            })
         }
         
         events = {

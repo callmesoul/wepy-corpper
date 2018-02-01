@@ -217,7 +217,7 @@
         default:{
           src:'',
           mode:"rectangle",
-          sizeType:"compressed",
+          sizeType:["compressed"],
         },
         twoWay: true,
       }
@@ -254,7 +254,7 @@
     watch = {
       params(newVal){
         newVal.mode=newVal.mode?newVal.mode:'rectangle';
-        newVal.sizeType=newVal.sizeType?newVal.sizeType:'compressed';
+        newVal.sizeType=newVal.sizeType?newVal.sizeType:['compressed'];
         this.showCropper(newVal);
       }
     };  // 声明数据watcher（详见后文介绍）
