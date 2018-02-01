@@ -54,7 +54,7 @@ npm install wepy-cropper --save
                 })
             })
             chooseImage.then((path)=>{
-                this.clipParams.src=tempFilePath;
+                this.clipParams.src=path;
                 this.$apply();
             })
         }
