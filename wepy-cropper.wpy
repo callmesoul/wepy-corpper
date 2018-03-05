@@ -1,6 +1,6 @@
 
 <template>
-  <scroll-view class="cropper_main_container {{cropperData.hidden?'hidden':''}}">
+  <scroll-view class="cropper_main_container {{params.visable?'':'hidden'}}">
     <view class="cropper_container">
       <canvas class="original_canvas" canvas-id="originalCanvas" style="width:{{cropperChangableData.originalSize.width}}px;height:{{cropperChangableData.originalSize.height}}px;"></canvas>
 
@@ -218,6 +218,7 @@
           src:'',
           mode:"rectangle",
           sizeType:["compressed"],
+            visable:false
         },
         twoWay: true,
       }
@@ -255,6 +256,7 @@
       params(newVal){
         newVal.mode=newVal.mode?newVal.mode:'rectangle';
         newVal.sizeType=newVal.sizeType?newVal.sizeType:['compressed'];
+        newVal.visable=newVal.visable?newVal.visable:false;
         this.showCropper(newVal);
       }
     };  // 声明数据watcher（详见后文介绍）
@@ -293,7 +295,7 @@
       // 隐藏cropper
       hideCropper(){
 
-        this.cropperData.hidden = true
+        this.params.visable = false
         this.cropperData.cropCallback = null
 
         this.cropperData=this.data.cropperData,
@@ -493,7 +495,7 @@
             success:  (res) =>{
               let tempFilePath = res.tempFilePath
               wx.hideLoading()
-              this.cropperData.hidden=true;
+              this.params.visable=false;
               this.$apply();
               this.$emit("wepyCropperFinsh",tempFilePath);
             },
@@ -530,7 +532,7 @@
           }
 
           cropperUtil.convexHull(points, points.length)
-          this.cropperData.hidden=true;
+          this.params.visable=false;
           this.$apply();
           this.$emit("wepyCropperFinsh",res);
         }
@@ -618,7 +620,6 @@
       if (mode) {
         this.cropperData.mode = mode
       }
-      this.cropperData.hidden = false
       this.cropperData.cropCallback = callback
       this.cropperData.sizeType = filterType
       this.$apply();
