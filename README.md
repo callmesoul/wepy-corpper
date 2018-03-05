@@ -36,6 +36,7 @@ npm install wepy-cropper --save
                     mode:'quadrangle' 并不返回图片，只返回在图片中的四个点，用于perspective correction（可以查找OpenCV相关资料）
                     */
                     sizeType:["compressed"],//数组,选填 ['original', 'compressed'], 默认original
+                    visable:false
             },
         }
         components = {
@@ -55,6 +56,7 @@ npm install wepy-cropper --save
             })
             chooseImage.then((path)=>{
                 this.clipParams.src=path;
+                this.clipParams.visable=true;
                 this.$apply();
             })
         }
@@ -69,6 +71,11 @@ npm install wepy-cropper --save
     
 </script>
 ```
+
+### 更新日志
+20180305 0.03
+添加字段visable控制显示和隐藏。
+之前用watch监听src控制会导致取消后src不变，没法再次打开问题
 
 
 
