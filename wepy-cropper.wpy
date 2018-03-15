@@ -809,7 +809,13 @@
     drawLines(cropperMovableItems, imageInfo, callback){
       let cropperData = this.cropperData
       let mode = cropperData.mode
-      let size = cropperUtil.getAdjustSize(W, H, imageInfo.width, imageInfo.height)
+      let rotateDegree = this.cropperChangableData.rotateDegree
+			let size
+			if (rotateDegree % 180 > 0) {
+				size = cropperUtil.getAdjustSize(W, H, imageInfo.height, imageInfo.width)
+			} else {
+				size = cropperUtil.getAdjustSize(W, H, imageInfo.width, imageInfo.height)
+			}
 
       let convexDots = []
       let orderedDots = []
