@@ -73,6 +73,9 @@ npm install wepy-cropper --save
 ```
 
 ### 更新日志
+20180507 0.0.5
+添加取消事件wepyCropperCancle
+
 20180315 0.0.4
 合拼request，发布0.04版本修复旋转阴影问题
 
