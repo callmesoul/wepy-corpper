@@ -311,7 +311,7 @@
             bottomleft: {
               x: -1,
               y: -1
-            },`
+            },
             bottomright: {
               x: -1,
               y: -1
